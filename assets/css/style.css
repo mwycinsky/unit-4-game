@@ -2,6 +2,10 @@ body {
     background-color: black;
 }
 
+#maincontainer {
+    padding-top: 20px;
+}
+
 #header {
     background-image: url("../images/crystalheader.png");
     color: white;
@@ -9,6 +13,7 @@ body {
     border-style: solid;
     border-color: white;
     border-width: .5px;
+    
 }
 
 .card-title, card-header {
