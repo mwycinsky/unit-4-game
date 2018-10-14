@@ -1,19 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystal Collector</title>
+    
+    <!-- CSS LINKS -->
+    
+    <!-- <link rel="stylesheet" href="assets/css/reset.css" -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
 </head>
+
+
 <body>
 
-    <h1>Whoever is blessed with the task of grading homework today...</h1>
+  <div class="container">
 
-    <p>As per my discussion with Sarah, I have fallen behind in my understanding of JavaScript functions (and subsequently, jQuery), and have decided to spend the time I would be doing this homework assignment on reinforcing my base knowledge on the subject in an effort to put me in a better position moving forward.  As soon as I feel more comfortable with the subject I will revise this assignment.  Sorry, and thanks...</p>
+    <!-- HEADER -->
+    <div class="jumbotron" id="header">
+        
+      <div class="container">
+        <h1 class="text-center">
+          <strong>Crystal Collector</strong>
+        </h1>
+      </div>
+    </div>
 
 
+    <!-- INSTRUCTIONS AND CRYSTALS -->
+    <div class="row">
 
-    
-</body>
+      <!-- INSTRUCTIONS -->
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <div class="card-header" id="row2">
+            <h3 class="card-title text-center">How to Play</h3>
+          </div>
+          <div class="card-body">
+            <p id="instructions">
+              You will be given a random number at the start of the game. There are four crystals below. By clicking on a
+                crystal you will add a specific amount of points to your total score. You win the game by matching your total
+                score to random number, you lose the game if your total score goes above the random number. The value of
+                each crystal is hidden from you until you click on it. Each time when the game starts, the game will change
+                the values of each crystal
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CRYSTAL IMAGES -->
+      <div class="col-md-6">
+
+        <div class="card mb-4">
+          <div class="card-header" id="row2">
+            <h3 class="card-title text-center">Choose, but choose wisely...</h3>
+          </div>
+          <div class="card-body text-center">
+              <img src="assets/images/redcrystal.png" id="red" class="thumbnail">
+            <img src="assets/images/bluecrystal.png" id="blue" class="thumbnail">
+            <img src="assets/images/greencrystal.png" id="green" class="thumbnail">
+            <img src="assets/images/yellowcrystal.png" id="yellow" class="thumbnail">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- SCORING -->
+    <div class="row">
+
+      <!-- WINS -->
+      <div class="col-md-3" id="frank">
+        <div class="card mb-4">
+          <div class="card-header" id="wlheaders">
+            <h3 class="card-title text-center">Win Count</h3>
+          </div>
+          <div class="card-body">
+            <h3 class="text-center" id="win-count">0</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOSSES -->
+      <div class="col-md-3">
+
+        <div class="card mb-4">
+          <div class="card-header" id="wlheaders">
+            <h3 class="card-title text-center">Loss Count</h3>
+          </div>
+          <div class="card-body">
+            <h3 class="text-center" id="loss-count">0</h3>
+          </div>
+        </div>
+
+      </div>
+
+    <!-- TARGET SCORE -->
+    <div class="col-md-3">
+        <div class="card mb-4">
+            <div class="card-header" id="scoringheaders">
+            <h3 class="card-title text-center">Target Score</h3>
+            </div>
+            <div class="card-body">
+            <h3 class="text-center" id="target-score"></h3>
+            </div>
+        </div>
+        </div>
+
+        <!-- YOUR SCORE -->
+        <div class="col-md-3">
+
+        <div class="card mb-4">
+            <div class="card-header" id="scoringheaders">
+            <h3 class="card-title text-center">Your Score</h3>
+            </div>
+            <div class="card-body">
+            <h3 class="text-center" id="your-score"></h3>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- JQ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="assets/javascript/game.js"></script>
+
+    </body>
+
 </html>

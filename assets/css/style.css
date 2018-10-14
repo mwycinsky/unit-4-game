@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+
+#header {
+    background-image: url("../images/crystalheader.png");
+    color: white;
+    padding: 25px;
+    border-style: solid;
+    border-color: white;
+    border-width: .5px;
+}
+
+.card-title, card-header {
+color: white;
+}
+
+h1 {
+    font-size: 45pt;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    }
+    
+#wlheaders {
+    background-color: slategray;
+}
+
+#scoringheaders {
+    background-color: slateblue;
+}
+
+#instructions {
+    font-size: 14px;
+    margin-bottom: -10px;
+    margin-top: -5px;
+}
+
+#row2 {
+background-color: slategray;
+}
+
